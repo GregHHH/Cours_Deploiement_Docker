@@ -7,6 +7,6 @@ do
 	then
 		echo "$var est plus petit que 5"
 	else
-	echo "$var est égal à 5"
+		echo "$var est égal à 5"
 	fi
 done
