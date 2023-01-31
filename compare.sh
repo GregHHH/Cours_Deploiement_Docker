@@ -1,3 +1,5 @@
+#!/bin/bash
+
 for var in "$@"
 do	
 	if [ $var -gt 5 ]
