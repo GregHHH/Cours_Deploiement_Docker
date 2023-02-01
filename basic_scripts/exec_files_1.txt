@@ -1,0 +1,7 @@
+ list of executables files:
+compare.sh
+find_out_1.sh
+find_out_2.sh
+find_user.sh
+read.sh
+square.sh

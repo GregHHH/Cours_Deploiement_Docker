@@ -1,0 +1,7 @@
+Number of executable files:  6
+------------------
+Number of non executable files:  3
+------------------
+Total number of files:  9
+------------------
+Number of directories:  0
