@@ -1,0 +1,28 @@
+echo " list of executables files:" > exec_files_1.txt
+
+# executable files
+for file in $(ls)
+do
+	if [ -x $file ]
+	then
+		echo $file >> list_exec_files.txt
+	fi
+done
+
+# directories
+# for file in $(ls)
+# do
+# 	if [ -d $file ]
+# 	then
+# 		echo $file >> list_exec_files.txt
+# 	fi
+# done
+
+# ===================================================================
+echo "Number of executable files: " $(ls -l | grep ^-..x | wc -l) > count_exec_files.txt
+echo "------------------" >> count_exec_files.txt
+echo "Number of non executable files: " $(ls -l | grep ^...- | wc -l)	>> count_exec_files.txt
+echo "------------------" >> count_exec_files.txt
+echo "Total number of files: " $(ls -l | grep ^- | wc -l)	>> count_exec_files.txt
+echo "------------------" >> count_exec_files.txt
+echo "Number of directories: " $(ls -l | grep ^d | wc -l) >> count_exec_files.txt
