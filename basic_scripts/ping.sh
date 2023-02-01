@@ -7,7 +7,7 @@ start=`date +%s`
 
 for i in {0..254}
 do
-	if ping -q -W 1 -c 1 $IP.$i
+	if ping -q -W 1 -c 1 $IP.$i >/dev/null;
 	then
 		echo $IP.$i >> online_host.txt
 	else
