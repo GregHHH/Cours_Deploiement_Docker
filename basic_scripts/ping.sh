@@ -5,7 +5,7 @@ start=`date +%s`
 
 for i in {0..254}
 do
-	if ping -q -W 1 -c 1 $IP.$i  #| grep "64 bytes" | cut -d " " -f 4 | tr -d ":" >> online_host.txt
+	if ping -q -W 1 -c 1 $IP.$i
 	then
 		echo $IP.$i >> online_host.txt
 	else
