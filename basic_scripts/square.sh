@@ -7,4 +7,4 @@ square() {
 for var in "$@"
 do	
 	square $var
-done		
+done
