@@ -1,0 +1,2 @@
+this document is meant to test the "tets_perm.sh" script. 
+if working properly, it should not appear in the list of files printed by the script since it's not a executable file. 
