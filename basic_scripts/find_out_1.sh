@@ -1,4 +1,4 @@
-echo " list of executables files:" > exec_files_1.txt
+echo "list of executables files:" > exec_files_1.txt
 for file in $(ls)
 do
 	if [ -x $file ]
@@ -6,3 +6,5 @@ do
 		echo $file >> exec_files_1.txt
 	fi
 done
+
+wc -l $file
