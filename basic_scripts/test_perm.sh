@@ -1,7 +1,7 @@
-for file in $(ls)
+for file in $(ls .)
 do
 	if [ -x $file ]
 	then
-		echo $file
+		echo $file 
 	fi
 done
